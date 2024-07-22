@@ -1,0 +1,127 @@
+*{
+  margin: 0;
+  padding: 0;
+
+}
+
+body{
+  background-color: var(--background);
+  color: var(--color-text);
+  font-family: var(--font-family);
+
+}
+
+.header{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.input{
+  display: flex;
+  flex-direction: row;
+  gap : 20px;
+  width: 100%;
+}
+form{
+  display: flex;
+  flex-direction: column;
+  gap : 10px;
+  width: 60%;
+}
+/* width 100% input de 60% de form*/
+input{
+  width: 100%; 
+  padding: 10px;
+  border-radius: 10px;
+}
+
+button{
+  width: 100px;
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  background: var(--gradient-button);
+  font-weight: 600;
+}
+
+h1, label{
+ color: transparent;
+ background: var(--gradient-text);
+ -webkit-background-clip: text;
+}
+
+label{
+  margin-top: 20px;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.card{
+  width: 300px;
+  height: 600px;
+  border: 1px solid #ffffff;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+img{
+  width: 100%;
+  object-fit: cover;
+}
+
+.card-body{
+  padding: 20px;
+}
+
+p{
+ font-size: 20px;
+ margin-bottom: 5px;
+}
+
+h2{
+  margin-bottom: 5px;
+}
+
+.card-list{
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.more-info{
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  top:50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1000;
+  background: black;
+
+}
+
+.details{
+  display: flex;
+  flex-direction: row;
+}
+
+.details img{
+ height: 400px;
+ width: 200px;
+ object-fit: cover;
+}
+
+.more-info button{
+  width: 100%;
+  border-radius: 0 ;
+}
+
+.details h3{
+  font-size: 2rem;
+}
